@@ -16,5 +16,11 @@
     "psr-4": {
       "antikirra\\": "src/"
     }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php -r \"chmod('./temp', 0777);\"",
+      "php -f ./src/update.php"
+    ]
   }
 }
