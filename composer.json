@@ -18,8 +18,14 @@
     }
   },
   "scripts": {
-    "post-install-cmd": "php -r \"chmod('./temp', 0777);\"",
-    "post-update-cmd": "antikirra\\maxmind\\Updater::update",
+    "post-install-cmd": [
+      "php -r \"chmod('./temp', 0777);\"",
+      "antikirra\\maxmind\\Updater::update"
+    ],
+    "post-update-cmd": [
+      "php -r \"chmod('./temp', 0777);\"",
+      "antikirra\\maxmind\\Updater::update"
+    ],
     "post-package-install": "antikirra\\maxmind\\Updater::update"
   }
 }
