@@ -1,5 +1,6 @@
 {
   "name": "antikirra/maxmind",
+  "description": "Simple updatable GeoIP based on MaxMind GeoLite2 MMDB",
   "authors": [
     {
       "name": "antikirra",
